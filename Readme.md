@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Александр Митягин](https://up.htmlacademy.ru/htmlcss/26/user/685113).
-* Наставник: `Александр Горбачев`\m/.https://htmlacademy.ru/profile/hrbchv
+* Наставник: [Александр Горбачев](https://htmlacademy.ru/profile/hrbchv).
 
 ---
 
