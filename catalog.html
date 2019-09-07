@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+
+    <header class="main-header">
+      <img class="main-header-logo" src="img/logo-header.svg" alt="Логотип">
+      <div class="header-top">
+        <form class="" action="index.html" method="post">
+          <button type="button" name="button-search"></button>
+          <input type="text" name="search" placeholder="Поиск по сайту" value="">
+        </form>
+        <ul class="user-navigation">
+          <li> <span></span> <a class="log-in" href="#">Войти</a></li>
+          <li> <span></span> <a class="compare" href="#">Сравнить</a></li>
+          <li> <span></span> <a class="basket" href="#">Корзина</a></li>
+        </ul>
+      </div>
+      <ul class="site-navigation">
+        <li><p class="user-catalog">Каталог товаров<span>+</span></p>
+          <ul>
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Фитнес браслеты</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+          </ul>
+        </li>
+        <li><a class="delivery" href="#">Доставка</a></li>
+        <li><a class="warranty" href="#">Гарантия</a></li>
+        <li><a class="contacts" href="#">Контакты</a></li>
+      </ul>
+    </header>
+    <main>
+
+
+      <section class="bread-crumbs">
+        <h1 class="visually-hidden">Каталог товаров</h1>
+        <p>Моноподы для селфи</p>
+        <ul class="crunbs-list">
+          <li> <a class="crumb-item" href="#">Главная</a> <span></span> </li>
+          <li> <a class="crumb-item" href="#">Каталог товаров</a> <span></span> </li>
+          <li> <a class="crumb-item" href="#">Моноподы для селфи</a> <span></span> </li>
+        </ul>
+      </section>
+
+      <section class="sorting">
+        <form class="sorting-form" action="index.html" method="post">
+          <div class="cost">
+            <p>Стоимость</p>
+            <input type="range" name="ranger" min="0" max="9000" value="5000" class="rng">
+            <label for="min-val">От</label>
+            <input type="text" id="min-val" name="" value="0" class="minim">
+            <label for="max-val">До</label>
+            <input type="text" id="max-val" name="" value="5000" class="maxim">
+          </div>
+          <div class="color">
+            <p>Цвет</p>
+              <input type="checkbox" id="black" name="specificity" value="" checked>
+              <label for="sblacklide">Черный</label>
+              <input type="checkbox" id="white" name="specificity" value="">
+              <label for="white">Белый</label>
+              <input type="checkbox" id="blue" name="specificity" value="" checked>
+              <label for="blue">Синий</label>
+              <input type="checkbox" id="red" name="specificity" value="">
+              <label for="red">Красный</label>
+              <input type="checkbox" id="pink" name="specificity" value="">
+              <label for="pink">Розовый</label>
+          </div>
+          <div class="bluetoth">
+            <p>Bluetoth</p>
+              <input type="radio" id="yes" name="gridSelect" value="">
+              <label for="yes">Есть</label>
+              <input type="radio" id="no" name="gridSelect" value="" checked>
+              <label for="no">Нет</label>
+          </div>
+          <input type="button" name="" value="Показать">
+        </form>
+      </section>
+
+      <section class="catalog-items">
+        <div class="catalog-item">
+          <img src="https://via.placeholder.com/150x100" alt="Любительская селфи-палка">
+          <p>Любительская селфи-палка <span>500р.</span> </p>
+        </div>
+        <div class="catalog-item">
+          <img src="https://via.placeholder.com/150x100" alt="Профессиональная селфи-палка">
+          <p> Профессиональная селфи-палка <span>1500р.</span> </p>
+        </div>
+        <div class="catalog-item">
+          <img src="https://via.placeholder.com/150x100" alt="Непотопляемая селфи-палка">
+          <p> Непотопляемая селфи-палка <span>2500р.</span> </p>
+        </div>
+        <div class="catalog-item">
+          <img src="https://via.placeholder.com/150x100" alt="Селфи-палка "Следуй за мной"">
+          <p> Селфи-палка "Следуй за мной" <span>4900р.</span> <span class="item-new"></span></p>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+      <div class="footer-top">
+        <img class="footer-logo" src="img/logo-footer.svg" alt="Логотип">
+        <ul class="user-navigation footer-user-navigation">
+          <li> <span></span> <a class="log-in" href="#">Войти</a></li>
+          <li> <span></span> <a class="compare" href="#">Сравнить</a></li>
+          <li> <span></span> <a class="basket" href="#">Корзина</a></li>
+        </ul>
+      </div>
+      <div class="footer-middle">
+        <p class="adress"></p>
+        <p class="phone"></p>
+        <ul class="services-list footer-services-list">
+          <li> <a class="sevice-list-item footer-services-list-item" href="#">Доставка</a> </li>
+          <li> <a class="sevice-list-item footer-services-list-item" href="#">Гарантия</a> </li>
+          <li> <a class="sevice-list-item footer-services-list-item" href="#">Кредит</a> </li>
+        </ul>
+      </div>
+      <div class="socials">
+        <span></span>
+        <ul class="social-list">
+          <li class="social-list-item"> <a href="#">Facebook</a> </li>
+          <li class="social-list-item"><a href="#">Instagramm</a> </li>
+          <li class="social-list-item"><a href="#">Tweeter</a> </li>
+        </ul>
+        <a href="#" class="footer-copyright"> <img src="img/logo-html.svg" alt=""> </a>
+      </div>
+    </footer>
+  </body>
+</html>
