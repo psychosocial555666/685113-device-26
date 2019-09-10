@@ -7,16 +7,15 @@
   <body>
 
     <header class="main-header">
-      <img class="main-header-logo" src="img/logo-header.svg" alt="Логотип">
+      <a href="index.html"> <img class="main-header-logo" src="img/logo-header.svg" alt="Логотип"> </a>
       <div class="header-top">
         <form class="" action="index.html" method="post">
-          <button type="button" name="button-search"></button>
           <input type="text" name="search" placeholder="Поиск по сайту" value="">
         </form>
         <ul class="user-navigation">
-          <li> <span></span> <a class="log-in" href="#">Войти</a></li>
-          <li> <span></span> <a class="compare" href="#">Сравнить</a></li>
-          <li> <span></span> <a class="basket" href="#">Корзина</a></li>
+          <li> <a class="log-in" href="#">Войти</a></li>
+          <li> <a class="compare" href="#">Сравнить</a></li>
+          <li> <a class="basket" href="#">Корзина</a></li>
         </ul>
       </div>
       <ul class="site-navigation">
@@ -42,9 +41,9 @@
         <h1 class="visually-hidden">Каталог товаров</h1>
         <p>Моноподы для селфи</p>
         <ul class="crunbs-list">
-          <li> <a class="crumb-item" href="#">Главная</a> <span></span> </li>
-          <li> <a class="crumb-item" href="#">Каталог товаров</a> <span></span> </li>
-          <li> <a class="crumb-item" href="#">Моноподы для селфи</a> <span></span> </li>
+          <li> <a class="crumb-item" href="#">Главная</a> </li>
+          <li> <a class="crumb-item" href="#">Каталог товаров</a> </li>
+          <li> <a class="crumb-item" href="#">Моноподы для селфи</a> </li>
         </ul>
       </section>
 
@@ -60,55 +59,67 @@
           </div>
           <div class="color">
             <p>Цвет</p>
-              <input type="checkbox" id="black" name="specificity" value="" checked>
-              <label for="sblacklide">Черный</label>
-              <input type="checkbox" id="white" name="specificity" value="">
-              <label for="white">Белый</label>
-              <input type="checkbox" id="blue" name="specificity" value="" checked>
-              <label for="blue">Синий</label>
-              <input type="checkbox" id="red" name="specificity" value="">
-              <label for="red">Красный</label>
-              <input type="checkbox" id="pink" name="specificity" value="">
-              <label for="pink">Розовый</label>
+            <ul>
+              <li><input type="checkbox" id="black" name="specificity" value="" checked>
+                <label for="sblacklide">Черный</label></li>
+              <li><input type="checkbox" id="white" name="specificity" value="">
+                <label for="white">Белый</label></li>
+              <li><input type="checkbox" id="blue" name="specificity" value="" checked>
+                <label for="blue">Синий</label></li>
+              <li><input type="checkbox" id="red" name="specificity" value="">
+                <label for="red">Красный</label></li>
+              <li><input type="checkbox" id="pink" name="specificity" value="">
+                <label for="pink">Розовый</label></li>
+            </ul>
           </div>
           <div class="bluetoth">
             <p>Bluetoth</p>
-              <input type="radio" id="yes" name="gridSelect" value="">
-              <label for="yes">Есть</label>
-              <input type="radio" id="no" name="gridSelect" value="" checked>
-              <label for="no">Нет</label>
+              <li><input type="radio" id="yes" name="gridSelect" value="">
+                <label for="yes">Есть</label></li>
+              <li><input type="radio" id="no" name="gridSelect" value="" checked>
+                <label for="no">Нет</label></li>
           </div>
-          <input type="button" name="" value="Показать">
+          <input type="submit" name="" value="Показать">
         </form>
       </section>
 
       <section class="catalog-items">
-        <div class="catalog-item">
-          <img src="https://via.placeholder.com/150x100" alt="Любительская селфи-палка">
-          <p>Любительская селфи-палка <span>500р.</span> </p>
-        </div>
-        <div class="catalog-item">
-          <img src="https://via.placeholder.com/150x100" alt="Профессиональная селфи-палка">
-          <p> Профессиональная селфи-палка <span>1500р.</span> </p>
-        </div>
-        <div class="catalog-item">
-          <img src="https://via.placeholder.com/150x100" alt="Непотопляемая селфи-палка">
-          <p> Непотопляемая селфи-палка <span>2500р.</span> </p>
-        </div>
-        <div class="catalog-item">
-          <img src="https://via.placeholder.com/150x100" alt="Селфи-палка "Следуй за мной"">
-          <p> Селфи-палка "Следуй за мной" <span>4900р.</span> <span class="item-new"></span></p>
-        </div>
+        <ul class="catalog-items-list">
+          <li class="catalog-item">
+            <img src="https://via.placeholder.com/150x100" alt="Любительская селфи-палка">
+            <div class="catalog-item-wrapper">
+              <p>Любительская селфи-палка <span>500р.</span> </p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="https://via.placeholder.com/150x100" alt="Профессиональная селфи-палка">
+            <div class="catalog-item-wrapper">
+              <p> Профессиональная селфи-палка <span>1500р.</span> </p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="https://via.placeholder.com/150x100" alt="Непотопляемая селфи-палка">
+            <div class="catalog-item-wrapper">
+              <p> Непотопляемая селфи-палка <span>2500р.</span> </p>
+            </div>
+          </li>
+          <li class="catalog-item catalog-item-new">
+            <img src="https://via.placeholder.com/150x100" alt="Селфи-палка "Следуй за мной"">
+            <div class="catalog-item-wrapper">
+              <p> Селфи-палка "Следуй за мной" <span>4900р.</span> </p>
+            </div>
+          </li>
+        </ul>
       </section>
 
     </main>
     <footer>
       <div class="footer-top">
-        <img class="footer-logo" src="img/logo-footer.svg" alt="Логотип">
+        <a href="index.html"> <img class="footer-logo" src="img/logo-footer.svg" alt="Логотип"> </a>
         <ul class="user-navigation footer-user-navigation">
-          <li> <span></span> <a class="log-in" href="#">Войти</a></li>
-          <li> <span></span> <a class="compare" href="#">Сравнить</a></li>
-          <li> <span></span> <a class="basket" href="#">Корзина</a></li>
+          <li> <a class="log-in" href="#">Войти</a></li>
+          <li> <a class="compare" href="#">Сравнить</a></li>
+          <li> <a class="basket" href="#">Корзина</a></li>
         </ul>
       </div>
       <div class="footer-middle">
