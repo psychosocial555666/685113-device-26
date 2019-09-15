@@ -19,7 +19,7 @@
         </ul>
       </div>
       <ul class="site-navigation">
-        <li><p class="user-catalog">Каталог товаров<span>+</span></p>
+        <li><p class="user-catalog"> <a href="#"> Каталог товаров </a> </p>
           <ul>
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Фитнес браслеты</a></li>
@@ -63,16 +63,16 @@
 
       <section class="sorting">
         <form class="sorting-form" action="index.html" method="post">
-          <div class="cost">
-            <p>Стоимость</p>
+          <fieldset class="cost">
+            <legend>Стоимость</legend>
             <input type="range" name="ranger" min="0" max="9000" value="5000" class="rng">
             <label for="min-val">От</label>
             <input type="text" id="min-val" name="" value="0" class="minim">
             <label for="max-val">До</label>
             <input type="text" id="max-val" name="" value="5000" class="maxim">
-          </div>
-          <div class="color">
-            <p>Цвет</p>
+          </fieldset>
+          <fieldset class="color">
+            <legend>Цвет</legend>
             <ul>
               <li><input type="checkbox" id="black" name="specificity" value="" checked>
                 <label for="sblacklide">Черный</label></li>
@@ -84,15 +84,15 @@
                 <label for="red">Красный</label></li>
               <li><input type="checkbox" id="pink" name="specificity" value="">
                 <label for="pink">Розовый</label></li>
-            </ul>
+            </fieldset>
           </div>
-          <div class="bluetoth">
-            <p>Bluetoth</p>
+          <fieldset class="bluetoth">
+            <legend>Bluetoth</legend>
               <li><input type="radio" id="yes" name="gridSelect" value="">
                 <label for="yes">Есть</label></li>
               <li><input type="radio" id="no" name="gridSelect" value="" checked>
                 <label for="no">Нет</label></li>
-          </div>
+          </fieldset>
           <input type="submit" name="" value="Показать">
         </form>
       </section>
