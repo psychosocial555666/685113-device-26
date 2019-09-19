@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body>
 
     <header class="main-header">
-      <a href="index.html"> <img class="main-header-logo" src="img/logo-header.svg" alt="Логотип"> </a>
+      <a href="index.html" class="main-header-logo" > <img src="img/logo-header.svg" alt="Логотип"> </a>
       <div class="header-top">
         <form class="" action="index.html" method="post">
           <input type="text" name="search" placeholder="Поиск по сайту" value="">
@@ -20,7 +23,7 @@
       </div>
       <ul class="site-navigation">
         <li> <a href="catalog.html" class="user-catalog"> Каталог товаров </a>
-          <ul>
+          <ul class="catalog-menu">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Фитнес браслеты</a></li>
             <li><a href="#">Квадрокоптеры</a></li>
@@ -40,7 +43,7 @@
       <section class="bread-crumbs">
         <h1 class="visually-hidden">Каталог товаров</h1>
         <p>Моноподы для селфи</p>
-        <ul class="crunbs-list">
+        <ul class="crumbs-list">
           <li> <a class="crumb-item" href="#">Главная</a> </li>
           <li> <a class="crumb-item" href="#">Каталог товаров</a> </li>
           <li> <a class="crumb-item" href="#">Моноподы для селфи</a> </li>
@@ -52,11 +55,11 @@
         <div class="sorting-navigation-wrapper">
           <p>Сортировка:</p>
           <ul class="sorting-navigation-list">
-            <li class="sorting-navigation-item price"> <a href="#">По цене</a> </li>
+            <li class="sorting-navigation-item price sorting-active"> <a href="#">По цене</a> </li>
             <li class="sorting-navigation-item type"> <a href="#">По типу</a> </li>
             <li class="sorting-navigation-item pop"> <a href="#">По популярности</a> </li>
             <li class="sorting-navigation-item ascending visually-hidden"> <a href="#">По возрастанию</a> </li>
-            <li class="sorting-navigation-item descending visually-hidden"> <a href="#">По убыванию</a> </li>
+            <li class="sorting-navigation-item descending visually-hidden sorting-active"> <a href="#">По убыванию</a> </li>
           </ul>
         </div>
       </section>
@@ -75,7 +78,7 @@
             <legend>Цвет</legend>
             <ul>
               <li><input type="checkbox" id="black" name="specificity" value="" checked>
-                <label for="sblacklide">Черный</label></li>
+                <label for="black">Черный</label></li>
               <li><input type="checkbox" id="white" name="specificity" value="">
                 <label for="white">Белый</label></li>
               <li><input type="checkbox" id="blue" name="specificity" value="" checked>
@@ -93,7 +96,7 @@
               <li><input type="radio" id="no" name="gridSelect" value="" checked>
                 <label for="no">Нет</label></li>
           </fieldset>
-          <button type="submit" name="" value="Показать">
+          <button  class="button" type="submit" name="" value= "Показать" >Показать</button>
         </form>
       </section>
 
@@ -128,7 +131,7 @@
             <button type="button" name="back">Назад</button>
             <button type="button" name="forward">Вперед</button>
           <ul class="page-number-list">
-            <li class="page number"> <a href="#">1</a> </li>
+            <li class="page number number-active"> <a href="#">1</a> </li>
             <li class="page number"> <a href="#">2</a> </li>
             <li class="page number"> <a href="#">3</a> </li>
           </ul>
@@ -138,7 +141,7 @@
     </main>
     <footer>
       <div class="footer-top">
-        <a href="index.html"> <img class="footer-logo" src="img/logo-footer.svg" alt="Логотип"> </a>
+        <a href="index.html" class="footer-logo"> <img  src="img/logo-footer.svg" alt="Логотип"> </a>
         <ul class="user-navigation footer-user-navigation">
           <li> <a class="log-in" href="#">Войти</a></li>
           <li> <a class="compare" href="#">Сравнить</a></li>
@@ -146,8 +149,8 @@
         </ul>
       </div>
       <div class="footer-middle">
-        <p class="adress"></p>
-        <p class="phone"></p>
+        <p class="adress">г. Москва, ул. Строителей, 15</p>
+        <p class="phone">Тел.: +7 (495) 495-95-95</p>
         <ul class="services-list footer-services-list">
           <li> <a class="sevice-list-item footer-services-list-item" href="#">Доставка</a> </li>
           <li> <a class="sevice-list-item footer-services-list-item" href="#">Гарантия</a> </li>
