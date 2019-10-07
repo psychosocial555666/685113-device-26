@@ -13,7 +13,7 @@
     <a href="#" class="main-header-logo" > <img src="img/logo-header.svg" width="163px" height="35px" alt="Логотип"> </a>
       <div class="header-top">
         <form class="" action="index.html" method="post">
-          <input type="text" name="search" placeholder="Поиск по сайту" value="">
+          <input type="text" class="header-search" name="search" placeholder="Поиск по сайту" value="">
         </form>
         <ul class="user-navigation">
           <li> <a class="log-in" href="#">Войти</a></li>
@@ -41,26 +41,23 @@
 
 
       <section class="info-slider container">
-        <h1 class="visually-hidden">Device - магазин умных товаров</h1><!-- Слоган конечно так себе, но решил не заморачиваться))-->
+        <h1 class="visually-hidden">Device - магазин умных товаров</h1>
 
         <div class="slide slide-one">
           <img class="slider-image" src="img/slider-image-1.png" alt="">
           <div class="slide-wrapper">
             <p class="slogan">Делай селфи,<br> как Бен Стиллер! </p>
             <p class="definition">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <dl class="slider-item-discription">
-              <dt>8,5м</dt>
-              <dd>Длина палки</dd>
-              <dt>5кг</dt>
-              <dd>Вес палки</dd>
-              <dt>Карбон</dt>
-              <dd>Материал</dd>
-            </dl>
+            <ul class="slider-discriptions">
+              <li class="discription-item"> <p> 8,5 м </p> <span> Длина палки </span> </li>
+              <li class="discription-item"> <p> 5 кг </p> <span>Вес палки</span> </li>
+              <li class="discription-item"> <p> Карбон </p> <span> Материал </span> </li>
+            </ul>
             <a href="#" class="more-details-button button">Подробнее</a>
             <div class="slide-conrol">
-              <span class="slide-checked"></span>
-              <span class=""></span>
-              <span class=""></span>
+              <a href="#" class="slider-button slide-checked"></a>
+              <a href="#" class="slider-button"></a>
+              <a href="#" class="slider-button"></a>
             </div>
           </div>
         </div>
@@ -69,15 +66,14 @@
           <div class="slide-wrapper">
             <p class="slogan">Худеем правильно!</p>
             <p class="definition">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <dl class="slider-item-discription">
-              <dt>48 часов</dt>
-              <dd>Без подзарядки</dd>
-            </dl>
-            <a href="#" class="more-details-button button">Подробнее</a>
-            <div class="slide-conrol">
-              <span class="visually-hidden">1</span>
-              <span class="visually-hidden slide-checked">2</span>
-              <span class="visually-hidden">3</span>
+              <ul class="slider-discriptions">
+                <li class="discription-item"> <p> 48 часов </p> <span> Без подзарядки </span> </li>
+              </ul>
+              <a href="#" class="more-details-button button">Подробнее</a>
+              <div class="slide-conrol">
+                <a href="#" class="slider-button"></a>
+                <a href="#" class="slider-button slide-checked"></a>
+                <a href="#" class="slider-button"></a>
             </div>
           </div>
         </div>
@@ -86,17 +82,15 @@
           <div class="slide-wrapper">
             <p class="slogan">Порхает как бабочка, жалит как пчела!</p>
             <p class="definition">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <dl class="slider-item-discription">
-              <dt>800м</dt>
-              <dd>Дальность полета</dd>
-              <dt>50м</dt>
-              <dd>Радиус поражения</dd>
-            </dl>
-            <a href="#" class="more-details-button button">Подробнее</a>
-            <div class="slide-conrol">
-              <span class="visually-hidden">1</span>
-              <span class="visually-hidden">2</span>
-              <span class="visually-hidden slide-checked">3</span>
+              <ul class="slider-discriptions">
+                <li class="discription-item"> <p> 800 м </p> <span> Дальность полета </span> </li>
+                <li class="discription-item"> <p> 50 м </p> <span>Радиус поражения</span> </li>
+              </ul>
+              <a href="#" class="more-details-button button">Подробнее</a>
+              <div class="slide-conrol">
+                <a href="#" class="slider-button"></a>
+                <a href="#" class="slider-button"></a>
+                <a href="#" class="slider-button slide-checked"></a>
             </div>
           </div>
         </div>
@@ -105,36 +99,39 @@
       <section class="popular container">
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular-list">
-          <li class="popular-list-item"> <a href="#">Виртуальная реальность</a> </li>
-          <li class="popular-list-item"> <a href="#">Моноподы<br> для селфи</a> </li>
-          <li class="popular-list-item"> <a href="#">Экшн-камера</a> </li>
-          <li class="popular-list-item"> <a href="#">Фитнес-браслеты</a> </li>
-          <li class="popular-list-item"> <a href="#">Умные часы</a> </li>
-          <li class="popular-list-item"> <a href="#">Квадрокоптеры</a> </li>
+          <li class="popular-list-item vr"> <a href="#">Виртуальная реальность</a> </li>
+          <li class="popular-list-item monopod"> <a href="#">Моноподы<br> для селфи</a> </li>
+          <li class="popular-list-item camera"> <a href="#">Экшн-камера</a> </li>
+          <li class="popular-list-item fitnes"> <a href="#">Фитнес-браслеты</a> </li>
+          <li class="popular-list-item watch"> <a href="#">Умные часы</a> </li>
+          <li class="popular-list-item quadrocopter"> <a href="#">Квадрокоптеры</a> </li>
         </ul>
       </section>
-      <section class="services">
-        <h2 class="visually-hidden">Наши сервисы</h2>
-        <ul class="services-list">
-          <li class="service-active"> <a class="sevice-list-item" href="#">Доставка</a> </li>
-          <li> <a class="sevice-list-item" href="#">Гарантия</a> </li>
-          <li> <a class="sevice-list-item" href="#">Кредит</a> </li>
-        </ul>
-        <div class="service-discription">
-          <dl class="service-discription-delivery">
-            <dt>Доставка</dt>
-            <dd>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</dd>
-          </dl>
-          <dl class="service-discription-warranty visually-hidden">
-            <dt>Гарантия</dt>
-            <dd>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</dd>
-          </dl>
-          <dl class="service-discription-credit visually-hidden">
-            <dt>Кредит</dt>
-            <dd>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</dd>
-          </dl>
-        </div>
-      </section>
+
+      <div class="substrate">
+        <section class="services container">
+          <h2 class="visually-hidden">Наши сервисы</h2>
+          <ul class="services-list">
+            <li class="service-active"> <a class="" href="#">Доставка</a> </li>
+            <li> <a class="service-list-item" href="#">Гарантия</a> </li>
+            <li> <a class="service-list-item" href="#">Кредит</a> </li>
+          </ul>
+          <div class="service-discription">
+            <dl class="service-discription-delivery">
+              <dt>Доставка</dt>
+              <dd>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</dd>
+            </dl>
+            <dl class="service-discription-warranty visually-hidden">
+              <dt>Гарантия</dt>
+              <dd>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</dd>
+            </dl>
+            <dl class="service-discription-credit visually-hidden">
+              <dt>Кредит</dt>
+              <dd>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</dd>
+            </dl>
+          </div>
+        </section>
+      </div>
       <section class="logotypes container">
         <h2 class="visually-hidden">Наши производители</h2>
         <ul class="logotypes-list">
@@ -151,12 +148,11 @@
           <p>Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки<br> России! DEVICE работает со многими транспортными компаниями:</p>
           <ul class="transport-list">
-            <li class="transport-list-item">Деловые линии</li>
+            <li class="transport-list-item">Деловые Линии</li>
             <li class="transport-list-item">Автотрейдинг</li>
             <li class="transport-list-item">ЖелДорЭкспедиция</li>
           </ul>
           <a href="#" class="about-us-button button">Подробнее о нас</a>
-          <span class="line"></span>
         </section>
         <section class="contact-us">
           <h3>Контакты</h3>
@@ -190,9 +186,9 @@
         <div class="socials">
           <span></span>
           <ul class="social-list">
-            <li class="social-list-item"> <a class="visually-hidden" href="#">Facebook</a> </li>
-            <li class="social-list-item"> <a class="visually-hidden" href="#">Instagramm</a> </li>
-            <li class="social-list-item"> <a class="visually-hidden" href="#">Tweeter</a> </li>
+            <li class="social-list-item facebook"> <a class="visually-hidden" href="#">Facebook</a> </li>
+            <li class="social-list-item instagramm"> <a class="visually-hidden" href="#">Instagramm</a> </li>
+            <li class="social-list-item tweeter"> <a class="visually-hidden" href="#">Tweeter</a> </li>
           </ul>
           <a href="#" class="footer-copyright"> <img src="img/logo-html.svg" alt=""> </a>
         </div>
