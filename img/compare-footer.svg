@@ -12,7 +12,7 @@
    viewBox="0 0 10 10"
    version="1.1"
    id="svg4497"
-   sodipodi:docname="compare.svg"
+   sodipodi:docname="compare-footer.svg"
    inkscape:version="0.92.1 r15371">
   <metadata
      id="metadata4503">
@@ -182,18 +182,8 @@
      id="path5106"
      inkscape:connector-curvature="0" />
   <path
-     style="fill:#000000;fill-opacity:1;stroke-width:0.04237288"
+     style="fill:#ffc600;fill-opacity:1;stroke-width:0.04237288"
      d="M 0.02118644,6.5 V 3.0254237 H 0.99576271 1.970339 V 6.5 9.9745763 H 0.99576271 0.02118644 Z"
      id="path5108"
-     inkscape:connector-curvature="0" />
-  <path
-     style="fill:#000000;fill-opacity:1;stroke-width:0.04237288"
-     d="M 4.0042373,4.9957627 V 0.01694915 H 5 5.9957627 V 4.9957627 9.9745763 H 5 4.0042373 Z"
-     id="path5110"
-     inkscape:connector-curvature="0" />
-  <path
-     style="fill:#000000;fill-opacity:1;stroke-width:0.04237288"
-     d="M 8.029661,5.9915254 V 2.0084746 H 9.0042373 9.9788136 V 5.9915254 9.9745763 H 9.0042373 8.029661 Z"
-     id="path5112"
      inkscape:connector-curvature="0" />
 </svg>

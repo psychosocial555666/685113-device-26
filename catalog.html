@@ -13,7 +13,7 @@
       <a href="index.html" class="main-header-logo" > <img src="img/logo-header.svg" alt="Логотип"> </a>
       <div class="header-top">
         <form class="" action="index.html" method="post">
-          <input class="header-search" type="text" name="search" placeholder="Поиск по сайту" value="">
+          <p class="header-search"><input type="text" name="search" placeholder="Поиск по сайту" value=""></p>
         </form>
         <ul class="user-navigation">
           <li> <a class="log-in" href="#">Войти</a></li>
@@ -50,22 +50,11 @@
         </ul>
       </section>
 
-      <section class="sorting-navigation">
-        <p class="filter">Фильтр:</p>
-        <div class="sorting-navigation-wrapper">
-          <p>Сортировка:</p>
-          <ul class="sorting-navigation-list">
-            <li class="sorting-navigation-item price sorting-active"> <a href="#">По цене</a> </li>
-            <li class="sorting-navigation-item type"> <a href="#">По типу</a> </li>
-            <li class="sorting-navigation-item pop"> <a href="#">По популярности</a> </li>
-            <li class="sorting-navigation-item ascending visually-hidden"> <a href="#">По возрастанию</a> </li>
-            <li class="sorting-navigation-item descending visually-hidden sorting-active"> <a href="#">По убыванию</a> </li>
-          </ul>
-        </div>
-      </section>
       <div class="catalog-wrapper">
 
         <section class="sorting">
+
+          <p class="filter">Фильтр:</p>
           <form class="sorting-form" action="index.html" method="post">
             <div class="cost">
               <p>Стоимость</p>
@@ -101,40 +90,52 @@
         </section>
 
         <section class="catalog-items">
-          <ul class="catalog-items-list">
-            <li class="catalog-item">
-              <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-              <div class="catalog-item-wrapper">
-                <p>Любительская селфи-палка</p> <span>500 руб.</span>
-              </div>
-            </li>
-            <li class="catalog-item">
-              <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-              <div class="catalog-item-wrapper">
-                <p> Профессиональная <br>селфи-палка</p> <span>1500 руб.</span>
-              </div>
-            </li>
-            <li class="catalog-item">
-              <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-              <div class="catalog-item-wrapper">
-                <p> Непотопляемая селфи-палка</p> <span>2500 руб.</span>
-              </div>
-            </li>
-            <li class="catalog-item catalog-item-new">
-              <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка "Следуй за мной"">
-              <div class="catalog-item-wrapper">
-                <p> Селфи-палка "Следуй за <br>мной"</p> <span>4900 руб.</span>
-              </div>
-            </li>
-          </ul>
-          <div class="page-navigation">
-              <button type="button" class="back-button" name="back">Назад</button>
-              <button type="button" class="forward-button" name="forward">Вперед</button>
-            <ul class="page-number-list">
-              <li class="page number number-active"> <a href="#">1</a> </li>
-              <li class="page number"> <a href="#">2</a> </li>
-              <li class="page number"> <a href="#">3</a> </li>
+          <div class="sorting-navigation-wrapper">
+            <p>Сортировка:</p>
+            <ul class="sorting-navigation-list">
+              <li class="sorting-navigation-item price sorting-active"> <a href="#">По цене</a> </li>
+              <li class="sorting-navigation-item type"> <a href="#">По типу</a> </li>
+              <li class="sorting-navigation-item pop"> <a href="#">По популярности</a> </li>
+              <li class="sorting-navigation-item"> <a href="#"><span class="ascending"></span><p class="visually-hidden">По возрастанию</p></a> </li>
+              <li class="sorting-navigation-item"> <a href="#"><span class="descending sorting-active"></span><p class="visually-hidden">По убыванию</p></a> </li>
             </ul>
+          </div>
+          <div class="catalog-content">
+            <ul class="catalog-items-list">
+              <li class="catalog-item">
+                <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                <div class="catalog-item-wrapper">
+                  <p>Любительская селфи-палка</p> <span>500 руб.</span>
+                </div>
+              </li>
+              <li class="catalog-item">
+                <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                <div class="catalog-item-wrapper">
+                  <p> Профессиональная <br>селфи-палка</p> <span>1500 руб.</span>
+                </div>
+              </li>
+              <li class="catalog-item">
+                <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <div class="catalog-item-wrapper">
+                  <p> Непотопляемая селфи-палка</p> <span>2500 руб.</span>
+                </div>
+              </li>
+              <li class="catalog-item catalog-item-new">
+                <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка "Следуй за мной"">
+                <div class="catalog-item-wrapper">
+                  <p> Селфи-палка "Следуй за <br>мной"</p> <span>4900 руб.</span>
+                </div>
+              </li>
+            </ul>
+            <div class="page-navigation">
+                <button type="button" class="back-button" name="back">Назад</button>
+                <button type="button" class="forward-button" name="forward">Вперед</button>
+              <ul class="page-number-list">
+                <li class="page number number-active"> <a href="#">1</a> </li>
+                <li class="page number"> <a href="#">2</a> </li>
+                <li class="page number"> <a href="#">3</a> </li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -165,9 +166,9 @@
         <div class="socials">
           <span></span>
           <ul class="social-list">
-            <li class="social-list-item"> <a class="visually-hidden" href="#">Facebook</a> </li>
-            <li class="social-list-item"> <a class="visually-hidden" href="#">Instagramm</a> </li>
-            <li class="social-list-item"> <a class="visually-hidden" href="#">Tweeter</a> </li>
+            <li class="social-list-item facebook"> <a class="visually-hidden" href="#">Facebook</a> </li>
+            <li class="social-list-item instagramm"> <a class="visually-hidden" href="#">Instagramm</a> </li>
+            <li class="social-list-item tweeter"> <a class="visually-hidden" href="#">Tweeter</a> </li>
           </ul>
           <a href="#" class="footer-copyright"> <img src="img/logo-html.svg" alt=""> </a>
         </div>
