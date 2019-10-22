@@ -5,33 +5,33 @@
     font-family: 'Open Sans';
     font-weight: normal;
     font-style: normal;
-    src: local('Open Sans Regular'), local('OpenSans-Regular'),
-      url(/fonts/opensans.woff) format('woff'),
-      url(/fonts/opensans.woff2) format('woff2');
+    src:
+      url(./fonts/opensans.woff) format('woff'),
+      url(./fonts/opensans.woff2) format('woff2');
     }
   @font-face {
-      font-family: 'Open Sans Light';
+      font-family: 'Open Sans';
       font-weight: 300;
       font-style: normal;
-      src: local('Open Sans Light'), local('OpenSans-Light'),
-        url(/fonts/opensanslight.woff) format('woff'),
-        url(/fonts/opensanslight.woff2) format('woff2');
+      src:
+        url(./fonts/opensanslight.woff) format('woff'),
+        url(./fonts/opensanslight.woff2) format('woff2');
     }
   @font-face {
-      font-family: 'Gilroy Light';
+      font-family: 'Gilroy';
       font-weight: 300;
       font-style: normal;
-      src: local('Gilroy Light'), local('Gilroy-Light'),
-        url(/fonts/gilroylight.woff) format('woff'),
-        url/(fonts/gilroylight.woff2) format('woff2');
+      src:
+        url(./fonts/gilroylight.woff) format('woff'),
+        url(./fonts/gilroylight.woff2) format('woff2');
     }
   @font-face {
-      font-family: 'Gilroy Extra Bold';
+      font-family: 'Gilroy';
       font-weight: 800;
       font-style: normal;
-      src: local('Gilroy Extra Bold'), local('Gilroy-ExtraBold'),
-        url(/fonts/gilroyextrabold.woff) format('woff'),
-        url(/fonts/gilroyextrabold.woff2) format('woff2');
+      src:
+        url(./fonts/gilroyextrabold.woff) format('woff'),
+        url(./fonts/gilroyextrabold.woff2) format('woff2');
     }
 
 
@@ -80,9 +80,7 @@ body button {
 }
 
 .main-header-logo svg:hover,
-.main-header-logo svg:focus,
-.footer-logo svg:hover,
-.footer-logo svg:focus {
+.footer-logo svg:hover {
   opacity: 0.5;
 }
 
@@ -91,12 +89,24 @@ body button {
   opacity: 0.3;
 }
 
+.logo-disabled svg:hover {
+  opacity: 1;
+}
+
+.logo-disabled svg:active {
+  opacity: 1;
+}
+
+.logo-disabled {
+  cursor: default;
+}
+
 .footer-logo svg {
   fill: #ffc600;
 }
 
 .header-top input {
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.3);
@@ -122,7 +132,7 @@ body button {
 .user-navigation a {
   text-decoration: none;
 
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #000000;
@@ -130,13 +140,11 @@ body button {
   font-weight: 300;
 }
 
-.user-navigation a:hover,
-.user-navigation a:focus {
+.user-navigation a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.user-navigation a:hover::before,
-.user-navigation a:focus::before {
+.user-navigation a:hover::before {
   opacity: 0.6;
 }
 
@@ -164,7 +172,7 @@ body button {
   text-decoration: none;
   text-transform: uppercase;
 
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -172,8 +180,7 @@ body button {
   font-weight: 800;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -196,7 +203,7 @@ body button {
 .catalog-menu a {
   list-style: none;
 
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
   color: #000000;
@@ -208,22 +215,23 @@ body button {
 }
 
 .info-slider {
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #000000;
 }
 
 .slogan {
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 47px;
   line-height: 56px;
   letter-spacing: 0.47px;
   color: #000000;
+  font-weight: 800;
 }
 
 .definition {
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #000000;
@@ -231,7 +239,7 @@ body button {
 }
 
 .discription-item p {
-  font-family: 'Gilroy Light', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 36px;
   line-height: 48px;
   color: #000000;
@@ -243,7 +251,7 @@ body button {
 }
 
 .discription-item span {
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 20px;
   color: #464646;
@@ -255,7 +263,7 @@ body button {
 }
 
 .button {
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -269,6 +277,8 @@ body button {
 
   position: relative;
 
+  cursor: pointer;
+
   padding-top: 6px;
   padding-bottom: 6px;
 
@@ -277,9 +287,10 @@ body button {
   background-position: center;
 }
 
-.button:hover,
-.button:focus {
-  background-color: rgba(240, 197, 46, 1);
+.button:hover {
+  animation-name: button-sizzing;
+  animation-duration: 0.2s;
+  background-size: 100% 100%;
 }
 
 .button:active {
@@ -301,7 +312,7 @@ body button {
 .popular a {
   text-decoration: none;
 
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -334,7 +345,7 @@ body button {
   text-decoration: none;
   text-transform: uppercase;
 
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   line-height: normal;
   color: #000000;
@@ -348,7 +359,7 @@ body button {
 }
 
 .service-discription dt {
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
   color: #000000;
@@ -357,7 +368,7 @@ body button {
 }
 
 .service-discription dd {
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #464646;
@@ -381,7 +392,7 @@ body button {
 }
 
 .about-us h3 {
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
   color: #000000;
@@ -390,7 +401,7 @@ body button {
 }
 
 .about-us p {
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #464646;
@@ -409,7 +420,7 @@ body button {
 .transport-list-item {
   list-style: none;
 
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 16px;
   line-height: 40px;
   color: #000000;
@@ -418,7 +429,7 @@ body button {
 }
 
 .contact-us h3 {
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
   color: #000000;
@@ -427,7 +438,7 @@ body button {
 }
 
 .contact-us p {
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #464646;
@@ -446,8 +457,7 @@ footer {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.footer-user-navigation a:hover,
-.footer-user-navigation a:focus {
+.footer-user-navigation a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -456,7 +466,7 @@ footer {
 }
 
 .footer-middle p {
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #ffffff;
@@ -483,7 +493,7 @@ footer {
   text-decoration: none;
   text-transform: uppercase;
 
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: rgba(255, 255, 255, 1);
@@ -491,8 +501,7 @@ footer {
   font-weight: 800;
 }
 
-.footer-services-list-item:hover,
-.footer-services-list-item:focus {
+.footer-services-list-item:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -521,7 +530,7 @@ footer {
 /*-------------------------Catalog-basicstyle-------------------*/
 
 .bread-crumbs p {
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
   color: #000000;
@@ -544,7 +553,7 @@ footer {
 .crumb-item {
   text-decoration: none;
 
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
@@ -552,8 +561,7 @@ footer {
   font-weight: 300;
 }
 
-.crumb-item:hover,
-.crumb-item:focus {
+.crumb-item:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -564,7 +572,7 @@ footer {
 .sorting .filter {
   text-transform: uppercase;
 
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
@@ -575,7 +583,7 @@ footer {
 .sorting-navigation-wrapper p {
   text-transform: uppercase;
 
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
@@ -606,8 +614,7 @@ footer {
   font-weight: normal;
 }
 
-.sorting-navigation-list a:hover,
-.sorting-navigation-list a:focus {
+.sorting-navigation-list a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -616,6 +623,10 @@ footer {
 }
 
 .sorting-active a {
+  color: rgba(0, 0, 0, 1);
+}
+
+.sorting-active a:hover {
   color: rgba(0, 0, 0, 1);
 }
 
@@ -632,7 +643,7 @@ footer {
 }
 
 .filter {
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
@@ -641,7 +652,7 @@ footer {
 }
 
 .sorting-form p {
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   font-stretch: normal;
@@ -652,12 +663,14 @@ footer {
 }
 
 .sorting label {
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 40px;
   color: rgba(0, 0, 0, 1);
   letter-spacing: 0.14px;
   font-weight: 300;
+
+  cursor: pointer;
 }
 
 .catalog-items ul {
@@ -673,7 +686,7 @@ footer {
 }
 
 .catalog-item p {
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
@@ -682,7 +695,7 @@ footer {
 }
 
 .catalog-item span {
-  font-family: 'Gilroy Light', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #464646;
@@ -693,7 +706,7 @@ footer {
   background-color: #ebebeb;
   text-transform: uppercase;
 
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
@@ -706,7 +719,7 @@ footer {
 
   text-transform: uppercase;
 
-  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
@@ -714,8 +727,7 @@ footer {
   font-weight: 800;
 }
 
-.page-navigation button:hover,
-.page-navigation button:focus {
+.page-navigation button:hover {
   background-color: #d9d9d9;
 }
 
@@ -819,7 +831,7 @@ body {
   top: -9px;
   right: 100px;
 
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: rgba(0, 0, 0, 1);
@@ -827,8 +839,7 @@ body {
   font-weight: 300;
 }
 
-.search-button:hover,
-.search-button:focus {
+.search-button:hover {
   background-color: #000000;
   color: rgba(255, 255, 255, 1);
   display: block;
@@ -945,6 +956,7 @@ body {
   margin-right: 20px;
 }
 
+
 .site-navigation {
   display: flex;
 
@@ -958,7 +970,7 @@ body {
 
   width: 16px;
   height: 16px;
-  right: -20px;
+  right: -28px;
   top: 3px;
 
   background-image: url("../img/plus.svg");
@@ -997,63 +1009,41 @@ body {
   position: relative;
 }
 
-.catalog-menu-wrapper{
-  display: none;
+
+
+.catalog-menu {
   position: absolute;
   box-sizing: border-box;
-  background-color: #f7e296;
-  z-index: 3;
-  padding-right: 540px;
+
+  display: none;
+  justify-content: flex-start;
+  left: -60px;
+
+  padding-left: 20px;
   padding-top: 20px;
-  padding-bottom: 37px;
-  padding-left: 60px;
+  padding-bottom: 36px;
 
   width: 1160px;
-
-  left: -60px;
+  background-color: #f8e296;
+  z-index: 3;
 }
 
-.catalog-menu-wrapper:hover {
-  display: block;
-}
-
-.catalog-menu li {
+.catalog-menu li:first-child {
+  margin-right: 10px;
   padding: 0;
 }
 
-.catalog-menu {
+.catalog-menu li:nth-child(2) {
+  margin-right: 10px;
+  padding: 0;
+}
+
+.user-catalog:hover + .catalog-menu {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
 }
 
-.catalog-menu a:hover,
-.catalog-menu a:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.catalog-menu a:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.catalog-menu li:nth-child(1) {
-  margin-right: 58px;
-}
-
-.catalog-menu li:nth-child(3) {
-  margin-left: auto;
-}
-
-.catalog-menu li:nth-child(4) {
-  margin-right: 83px;
-}
-
-.catalog-menu li:nth-child(5) {
-  margin-right: 200px;
-}
-
-.site-navigation:hover + .catalog-menu-wrapper {
-  display: block;
+.catalog-menu:hover {
+  display: flex;
 }
 
 /*----------main*/
@@ -1061,6 +1051,7 @@ body {
 .slide {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .slider-image {
@@ -1078,60 +1069,41 @@ body {
 
 
 
-.slogan::after {
+.slide::after {
   content: "";
 
   position: absolute;
 
   width: 166px;
   height: 131px;
-  left: 333px;
-  top: -70px;
+  right: 60px;
+  top: -105px;
+  z-index: 1;
 
   background-image: url("../img/01.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.slide-two .slogan::after {
-  content: "";
-
-  position: absolute;
-
-  width: 200px;
-  height: 131px;
-  left: 308px;
-  top: -70px;
-
+.slide-two::after {
   background-image: url("../img/02.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  width: 200px;
 }
 
-.slide-three .slogan::after {
-  content: "";
-
-  position: absolute;
-
-  width: 210px;
-  height: 131px;
-  left: 308px;
-  top: -70px;
-
+.slide-three::after {
   background-image: url("../img/03.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  width: 200px;
 }
 
-.slogan::before{
+.slide::before{
   content: "";
 
   position: absolute;
 
   width: 100px;
   height: 7px;
-  left: 0px;
-  top: -45px;
+  right: 460px;
+  top: -75px;
 
   background-color: white;
 
@@ -1146,6 +1118,8 @@ body {
   position: relative;
   margin-right: 50px;
   padding-bottom: 0px;
+
+  z-index: 2;
 }
 
 .slogan {
@@ -1335,8 +1309,7 @@ body {
   margin-right: 0px;
 }
 
-.popular-list-item a:hover .popular-wrapper,
-.popular-list-item a:focus .popular-wrapper {
+.popular-list-item a:hover .popular-wrapper {
   background-color: #f0c52e;
 }
 
@@ -1391,15 +1364,21 @@ body {
   text-align: center;
 
   padding-top: 10px;
+
+  background-image: url("../img/button-background.png");
+  background-repeat: repeat-x;
+  background-position: center;
 }
 
-.services-list a:hover,
-.services-list a:focus {
-  background-color: #f0c52e;
+.services-list a:hover {
+  animation-name: button-sizzing;
+  animation-duration: 0.2s;
+  background-size: 100% 100%;
 }
 
 .services-list a:active {
   background-color: #000000;
+  background-image: none;
   color:  #f7e184;
   width: 100%;
   height: 100%;
@@ -1411,7 +1390,7 @@ body {
 
 }
 
-.service-list-item::before {
+/*.service-list-item::before {
   content: "";
 
   position: absolute;
@@ -1425,7 +1404,7 @@ body {
   top: 17px;
 
   z-index: -1;
-}
+}*/
 
 .service-active a {
   background-color: #000000;
@@ -1436,10 +1415,11 @@ body {
 
   padding-top: 10px;
   padding-left: 20px;
+
+  background-image: none;
 }
 
-.service-active a:hover,
-.service-active a:focus {
+.service-active a:hover {
   background-color: #000000;
   color:  #f7e184;
   width: 100%;
@@ -1520,23 +1500,19 @@ body {
   justify-content: space-between;
 }
 
-.logotypes-list li:first-child:hover,
-.logotypes-list li:first-child:focus {
+.logotypes-list li:first-child:hover {
   background-image: url(../img/logotype-color-1.png);
 }
 
-.logotypes-list li:nth-child(2):hover,
-.logotypes-list li:nth-child(2):focus {
+.logotypes-list li:nth-child(2):hover {
   background-image: url(../img/logotype-color-2.png);
 }
 
-.logotypes-list li:nth-child(3):hover,
- .logotypes-list li:nth-child(3):focus{
+.logotypes-list li:nth-child(3):hover {
   background-image: url(../img/logotype-color-3.png);
 }
 
-.logotypes-list li:nth-child(4):hover,
-.logotypes-list li:nth-child(4):focus {
+.logotypes-list li:nth-child(4):hover {
   background-image: url(../img/logotype-color-4.png);
 }
 
@@ -1768,8 +1744,7 @@ body {
   opacity: 0.3;
 }
 
-.social-list a:hover,
-.social-list a:focus {
+.social-list a:hover {
   opacity: 0.6;
 }
 
@@ -1777,8 +1752,7 @@ body {
   opacity: 0.1;
 }
 
-.footer-copyright img:hover,
-.footer-copyright img:focus {
+.footer-copyright img:hover {
   opacity: 0.6;
 }
 
@@ -1912,6 +1886,10 @@ body {
   margin-top: 10px;
 }
 
+.sorting-form input:focus + label {
+  outline: 1px solid lightblue;
+}
+
 .cost {
   border-top: 3px solid black;
 
@@ -1955,6 +1933,8 @@ body {
   top: -11px;
   left: 0;
 
+  cursor: pointer;
+
   padding: 0;
   margin: 0;
 
@@ -1992,7 +1972,7 @@ body {
   padding: 0;
   margin: 0;
 
-  font-family: 'Gilroy Light';
+  font-family: 'Gilroy';
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -2016,10 +1996,6 @@ body {
   padding-left: 0;
 }
 
-.color input {
-  display: none;
-}
-
 .color p {
   margin-bottom: 15px;
 }
@@ -2029,7 +2005,7 @@ body {
 }
 
 .color label {
-  font-family: 'Open Sans Light';
+  font-family: 'Open Sans';
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -2075,8 +2051,7 @@ body {
   background-position: 0 0;
 }
 
-.color li:hover label::before,
-.color li:focus label::before {
+.color li:hover label::before {
   opacity: 0.6;
 }
 
@@ -2092,12 +2067,8 @@ body {
   padding-left: 0;
 }
 
-.bluetoth input {
-  display: none;
-}
-
 .bluetoth label {
-  font-family: 'Open Sans Light';
+  font-family: 'Open Sans';
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -2142,8 +2113,7 @@ body {
   background-position: 0 0;
 }
 
-.bluetoth li:hover label::before,
-.bluetoth li:focus label::before {
+.bluetoth li:hover label::before {
   opacity: 0.6;
 }
 
@@ -2240,9 +2210,7 @@ body {
 }
 
 .ascending:hover,
-.ascending:focus,
-.descending:hover,
-.descending:focus {
+.descending:hover {
   opacity: 0.4;
 }
 
@@ -2282,6 +2250,10 @@ body {
 }
 
 .sorting-active {
+  opacity: 1;
+}
+
+.sorting-active:hover {
   opacity: 1;
 }
 
@@ -2350,7 +2322,7 @@ body {
   text-decoration: none;
 
   opacity: 0.5;
-  font-family: 'Open Sans Light';
+  font-family: 'Open Sans';
   font-size: 13px;
   font-weight: 300;
   font-stretch: normal;
@@ -2361,8 +2333,7 @@ body {
   color: #00000080;
 }
 
-.compare-add:hover,
-.compare-add:focus {
+.compare-add:hover {
   opacity: 1;
 }
 
@@ -2434,6 +2405,8 @@ body {
   left: 0;
   background-color: #ebebeb;
 
+  cursor: pointer;
+
   height: 70px;
 
   padding-left: 30px;
@@ -2446,6 +2419,8 @@ body {
 
   top: 0;
   right: 0;
+
+  cursor: pointer;
 
   height: 70px;
   background-color: #ebebeb;
@@ -2463,6 +2438,7 @@ body {
 /*--------------------modal-----------------*/
 
 .modal-feedback {
+  display: none;
   width: 960px;
   box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
   padding: 90px 100px;
@@ -2497,8 +2473,7 @@ body {
   opacity: 0.5;
 }
 
-.close-tab:hover,
-.close-tab:focus {
+.close-tab:hover {
   opacity: 1;
 }
 
@@ -2512,7 +2487,7 @@ body {
 }
 
 .feedback-form label {
-  font-family: 'Gilroy Extra Bold';
+  font-family: 'Gilroy';
   font-size: 18px;
   font-weight: 800;
   font-style: normal;
@@ -2581,6 +2556,7 @@ body {
 /*----------------------------*/
 
 .modal-map {
+  display: none;
   width: 960px;
   height: 559px;
 
@@ -2611,4 +2587,58 @@ body {
 .modal-map iframe {
   width: 100%;
   height: 100%;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;F
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes button-sizzing {
+  from { background-size: 100% 20%; }
+  to   { background-size: 100% 100%; }
 }

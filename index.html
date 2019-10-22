@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
   </head>
 
   <body>
 
     <header class="main-header container">
-    <a href="#" class="main-header-logo" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35">
+    <a href="#" class="main-header-logo logo-disabled" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35">
       <path d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z"/>
     </svg></a>
       <div class="header-top">
         <form class="" action="index.html" method="post">
-          <p class="header-search"><input type="text" name="search" placeholder="Поиск по сайту" value=""><button class="search-button">Найти</button></p>
+          <p class="header-search"><input type="text" placeholder="Поиск по сайту" value=""><button class="search-button">Найти</button></p>
         </form>
         <ul class="user-navigation">
           <li> <a class="log-in" href="#">Войти</a></li>
@@ -26,21 +26,31 @@
       <div class="site-navigation-wrapper">
       <ul class="site-navigation">
         <li> <a href="catalog.html" class="user-catalog"> Каталог товаров </a>
+          <ul class="catalog-menu">
+            <li>
+              <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="catalog.html">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="#">Фитнес браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+          </ul>
         </li>
         <li><a class="delivery" href="#">Доставка</a></li>
         <li><a class="warranty" href="#">Гарантия</a></li>
         <li><a class="contacts" href="#">Контакты</a></li>
       </ul>
-      <div class="catalog-menu-wrapper">
-      <ul class="catalog-menu">
-        <li><a href="#">Виртуальная реальность</a></li>
-        <li><a href="#">Фитнес браслеты</a></li>
-        <li><a href="#">Квадрокоптеры</a></li>
-        <li><a href="#">Моноподы для селфи</a></li>
-        <li><a href="#">Умные часы</a></li>
-        <li><a href="#">Экшн-камеры</a></li>
-      </ul>
-      </div>
       </div>
     </header>
     <main>
@@ -49,7 +59,7 @@
       <section class="info-slider container">
         <h1 class="visually-hidden">Device - магазин умных товаров</h1>
 
-        <div class="slide slide-one  visually-hidden">
+        <div class="slide slide-one">
           <img class="slider-image" width="384px" height="486px" src="img/slider-image-1.png" alt="">
           <div class="slide-wrapper">
             <p class="slogan">Делай селфи,<br> как Бен Стиллер! </p>
@@ -61,9 +71,9 @@
             </ul>
             <a href="#" class="more-details-button button">Подробнее</a>
             <div class="slide-conrol">
-              <a href="#" class="slider-button slide-checked"></a>
-              <a href="#" class="slider-button"></a>
-              <a href="#" class="slider-button"></a>
+              <a href="#" class="slider-button btn-one slide-checked"></a>
+              <a href="#" class="slider-button btn-two"></a>
+              <a href="#" class="slider-button btn-three"></a>
             </div>
           </div>
         </div>
@@ -83,8 +93,8 @@
             </div>
           </div>
         </div>
-        <div class="slide slide-three ">
-          <img class="slider-image" width=526px" height="334px" src="img/slider-image-3.png" alt="">
+        <div class="slide slide-three visually-hidden">
+          <img class="slider-image" width="526px" height="334px" src="img/slider-image-3.png" alt="">
           <div class="slide-wrapper">
             <p class="slogan">Порхает как бабочка, жалит как пчела!</p>
             <p class="definition">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -94,9 +104,9 @@
               </ul>
               <a href="#" class="more-details-button button">Подробнее</a>
               <div class="slide-conrol">
-                <a href="#" class="slider-button"></a>
-                <a href="#" class="slider-button"></a>
-                <a href="#" class="slider-button slide-checked"></a>
+                <button class="slider-button"></button>
+                <button class="slider-button"></button>
+                <button class="slider-button slide-checked"></button>
             </div>
           </div>
         </div>
@@ -106,7 +116,7 @@
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular-list">
           <li class="popular-list-item"><a href="#"> <span class="popular-wrapper virtual-reality"></span> Виртуальная реальность</a> </li>
-          <li class="popular-list-item"><a href="#"><span class="popular-wrapper monopod"></span> Моноподы<br> для селфи</a> </li>
+          <li class="popular-list-item"><a href="catalog.html"><span class="popular-wrapper monopod"></span> Моноподы<br> для селфи</a> </li>
           <li class="popular-list-item "><a href="#"><span class="popular-wrapper camera"></span> Экшн-камера</a> </li>
           <li class="popular-list-item "><a href="#"><span class="popular-wrapper fitnes"></span> Фитнес-браслеты</a> </li>
           <li class="popular-list-item "><a href="#"><span class="popular-wrapper watch"></span> Умные часы</a> </li>
@@ -141,7 +151,7 @@
       <section class="logotypes container">
         <h2 class="visually-hidden">Наши производители</h2>
         <ul class="logotypes-list">
-          <li> <a class="logotypes-list-item" href="#"> <img src="img/logotype-black-1.png".pngalt="DJI"> </a> </li>
+          <li> <a class="logotypes-list-item" href="#"> <img src="img/logotype-black-1.png" width="260" height="100" alt="DJI"> </a> </li>
           <li> <a class="logotypes-list-item" href="#"> <img src="img/logotype-black-2.png" width="260" height="100" alt="SPGadgets"> </a> </li>
           <li> <a class="logotypes-list-item" href="#"> <img src="img/logotype-black-3.png" width="260" height="100" alt="GoPro"> </a> </li>
           <li> <a class="logotypes-list-item" href="#"> <img src="img/logotype-black-4.png" width="260" height="100" alt="Vive"> </a> </li>
@@ -173,7 +183,7 @@
       <div class="footer-wrapper container">
 
         <div class="footer-top">
-          <a href="#" class="footer-logo"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35">
+          <a href="#" class="footer-logo logo-disabled"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35">
             <path d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z"/>
           </svg> </a>
           <ul class="user-navigation footer-user-navigation">
@@ -213,7 +223,7 @@
               </a>
             </li>
           </ul>
-          <a href="#" class="footer-copyright"> <img src="img/logo-html.svg" alt=""> </a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-copyright"> <img src="img/logo-html.svg" alt=""> </a>
         </div>
 
       </div>
@@ -221,7 +231,7 @@
 
 
 
-    <section class="modal modal-feedback visually-hidden">
+    <section class="modal modal-feedback">
       <a href="#" class="close-tab">
         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg>
       </a>
@@ -236,19 +246,22 @@
         </p>
         <p>
           <label for="user-massage">Текст письма:</label>
-          <textarea class="user-massage-field" id="user-massage" type="text" name="message" placeholder="В свободной форме"></textarea>
+          <textarea class="user-massage-field" id="user-massage" name="message" placeholder="В свободной форме"></textarea>
         </p>
         <button class=" feedback-button button" type="submit">Отправить</button>
       </form>
     </section>
 
-    <section class="modal modal-map visually-hidden">
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488780012!2d37.527429315964596!3d55.68703098053575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1571239456326!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488780012!2d37.527429315964596!3d55.68703098053575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1571239456326!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
       <p><img src="img/map.png" width="960" height="559" alt="Офис компании по адресу ул. Строителей 15, Москва"></p>
       <a href="#" class="close-tab close-map">
         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg>
       </a>
     </section>
+    <script src="./js/script.js">
+
+    </script>
   </body>
 </html>

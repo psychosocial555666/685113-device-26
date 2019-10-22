@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
   </head>
 
   <body class="catalog-page">
@@ -26,21 +26,31 @@
       <div class="site-navigation-wrapper">
       <ul class="site-navigation">
         <li> <a href="catalog.html" class="user-catalog"> Каталог товаров </a>
+          <ul class="catalog-menu">
+            <li>
+              <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="#">Фитнес браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+          </ul>
         </li>
         <li><a class="delivery" href="#">Доставка</a></li>
         <li><a class="warranty" href="#">Гарантия</a></li>
         <li><a class="contacts" href="#">Контакты</a></li>
       </ul>
-      <div class="catalog-menu-wrapper">
-      <ul class="catalog-menu">
-        <li><a href="#">Виртуальная реальность</a></li>
-        <li><a href="#">Фитнес браслеты</a></li>
-        <li><a href="#">Квадрокоптеры</a></li>
-        <li><a href="#">Моноподы для селфи</a></li>
-        <li><a href="#">Умные часы</a></li>
-        <li><a href="#">Экшн-камеры</a></li>
-      </ul>
-      </div>
       </div>
     </header>
     <main >
@@ -72,25 +82,28 @@
             <div class="color">
               <p>Цвет</p>
               <ul>
-                <li><input type="checkbox" id="black" name="specificity" value="" checked>
+                <li><input class="visually-hidden" type="checkbox" id="black" name="specificity" value="" checked>
                   <label for="black">Черный</label></li>
-                <li><input type="checkbox" id="white" name="specificity" value="">
+                <li><input class="visually-hidden" type="checkbox" id="white" name="specificity" value="">
                   <label for="white">Белый</label></li>
-                <li><input type="checkbox" id="blue" name="specificity" value="" checked>
+                <li><input class="visually-hidden" type="checkbox" id="blue" name="specificity" value="" checked>
                   <label for="blue">Синий</label></li>
-                <li><input type="checkbox" id="red" name="specificity" value="">
+                <li><input class="visually-hidden" type="checkbox" id="red" name="specificity" value="">
                   <label for="red">Красный</label></li>
-                <li><input type="checkbox" id="pink" name="specificity" value="">
+                <li><input class="visually-hidden" type="checkbox" id="pink" name="specificity" value="">
                   <label for="pink">Розовый</label></li>
+              </ul>
               </div>
             <div class="bluetoth">
               <p>Bluetooth</p>
-                <li><input type="radio" id="yes" name="gridSelect" value="">
+              <ul>
+                <li><input class="visually-hidden" type="radio" id="yes" name="gridSelect" value="">
                   <label for="yes">Есть</label></li>
-                <li><input type="radio" id="no" name="gridSelect" value="" checked>
+                <li><input class="visually-hidden" type="radio" id="no" name="gridSelect" value="" checked>
                   <label for="no">Нет</label></li>
+              </ul>
             </div>
-            <button  class="button show-button" type="submit" name="" >Показать</button>
+            <button  class="button show-button" type="submit" name="show" >Показать</button>
           </form>
         </section>
 
@@ -115,7 +128,7 @@
                   <p>Любительская селфи-палка</p> <span>500 руб.</span>
                 </div>
                 <div class="catalog-item-hover">
-                <button class="button case-button"type="button" name="button">В корзину</button>
+                <button class="button case-button" type="button" name="button">В корзину</button>
                 <a href="#" class="compare-add">Добавить к сравнению</a>
                 </div>
               </li>
@@ -125,7 +138,7 @@
                   <p> Профессиональная <br>селфи-палка</p> <span>1500 руб.</span>
                 </div>
                 <div class="catalog-item-hover">
-                <button class="button case-button"type="button" name="button">В корзину</button>
+                <button class="button case-button" type="button" name="button">В корзину</button>
                 <a href="#" class="compare-add">Добавить к сравнению</a>
                 </div>
               </li>
@@ -135,17 +148,17 @@
                   <p> Непотопляемая селфи-палка</p> <span>2500 руб.</span>
                 </div>
                 <div class="catalog-item-hover">
-                <button class="button case-button"type="button" name="button">В корзину</button>
+                <button class="button case-button" type="button" name="button">В корзину</button>
                 <a href="#" class="compare-add">Добавить к сравнению</a>
                 </div>
               </li>
               <li class="catalog-item catalog-item-new">
-                <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка "Следуй за мной"">
+                <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка 'Следуй за мной'">
                 <div class="catalog-item-wrapper">
                   <p> Селфи-палка "Следуй за <br>мной"</p> <span>4900 руб.</span>
                 </div>
                 <div class="catalog-item-hover">
-                <button class="button case-button"type="button" name="button">В корзину</button>
+                <button class="button case-button" type="button" name="button">В корзину</button>
                 <a href="#" class="compare-add">Добавить к сравнению</a>
                 </div>
               </li>
@@ -210,7 +223,7 @@
               </a>
             </li>
           </ul>
-          <a href="#" class="footer-copyright"> <img src="img/logo-html.svg" alt=""> </a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-copyright"> <img src="img/logo-html.svg" alt=""> </a>
         </div>
 
       </div>
