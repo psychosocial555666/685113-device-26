@@ -14,17 +14,14 @@ var mailStorage = localStorage.getItem("userMail");
       evt.preventDefault();
       popup.classList.add("modal-show");
 
-
+      userName.focus();
       if (nameStorage) {
         userName.value = nameStorage;
         userMail.focus();
-      } else {
-        if (mailStorage) {
-          userMail.value = mailStorage;
-          userMessage.focus();
-        } else {
-        userName.focus();
-         }
+      }
+      if (mailStorage) {
+        userMail.value = mailStorage;
+        userMessage.focus();
       }
     });
 
@@ -89,6 +86,7 @@ var mailStorage = localStorage.getItem("userMail");
       }
     });
 
+
     var slideOne = document.querySelector(".slide-one");
     var slideTwo = document.querySelector(".slide-two");
     var slideThree = document.querySelector(".slide-three");
@@ -97,7 +95,7 @@ var mailStorage = localStorage.getItem("userMail");
     var slideBtnTwo = document.querySelector(".btn-two");
     var slideBtnThree = document.querySelector(".btn-three");
 
-    slideBtnOne.addEventListener("click", function (evt) {
+      slideBtnOne.addEventListener("click", function (evt) {
       evt.preventDefault();
       slideOne.classList.remove("visually-hidden");
       slideBtnOne.classList.add("slide-checked");
@@ -131,4 +129,48 @@ var mailStorage = localStorage.getItem("userMail");
 
       slideThree.classList.remove("visually-hidden");
       slideBtnThree.classList.add("slide-checked");
+    });
+
+    var serviceOne = document.querySelector(".service-discription-delivery");
+    var serviceTwo = document.querySelector(".service-discription-warranty");
+    var serviceThree = document.querySelector(".service-discription-credit");
+
+    var delivery = document.querySelector(".service-delivery-btn");
+    var warranty = document.querySelector(".service-warranty-btn");
+    var credit = document.querySelector(".service-credit-btn");
+
+      delivery.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      serviceOne.classList.remove("visually-hidden");
+      delivery.classList.add("service-active");
+
+      serviceTwo.classList.add("visually-hidden");
+      warranty.classList.remove("service-active");
+
+      serviceThree.classList.add("visually-hidden");
+      credit.classList.remove("service-active");
+    });
+
+    warranty.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      serviceOne.classList.add("visually-hidden");
+      delivery.classList.remove("service-active");
+
+      serviceTwo.classList.remove("visually-hidden");
+      warranty.classList.add("service-active");
+
+      serviceThree.classList.add("visually-hidden");
+      credit.classList.remove("service-active");
+    });
+
+    credit.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      serviceOne.classList.add("visually-hidden");
+      delivery.classList.remove("service-active");
+
+      serviceTwo.classList.add("visually-hidden");
+      warranty.classList.remove("service-active");
+
+      serviceThree.classList.remove("visually-hidden");
+      credit.classList.add("service-active");
     });
