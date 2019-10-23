@@ -1042,6 +1042,10 @@ body {
   display: flex;
 }
 
+.user-catalog:focus + .catalog-menu {
+  display: flex;
+}
+
 .catalog-menu:hover {
   display: flex;
 }
