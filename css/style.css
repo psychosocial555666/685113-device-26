@@ -59,11 +59,13 @@ body {
   margin: auto;
   padding: 0;
   overflow-x: hidden;
+  padding-top:40px;
 
   background-color: #ffffff;
 }
 
-body button {
+.main-page button,
+.catalog-page button {
  border: none;
  box-shadow: none;
 }
@@ -782,7 +784,6 @@ body {
   flex-direction: column;
   box-sizing: border-box;
 
-  margin-top: 40px;
   padding-left: 60px;
   padding-right: 61px;
 
@@ -820,7 +821,7 @@ body {
   outline: none;
 }
 
-.search-button {
+.main-header .search-button {
   display: none;
   border: 3px solid black;
 
@@ -1678,9 +1679,18 @@ body {
 .phone {
   display: block;
   text-align: right;
+  text-decoration: none;
 
   width: 166px;
 
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #ffffff;
+  letter-spacing: normal;
+  font-weight: 300;
+
+  margin: 0;
   padding: 0;
 }
 
@@ -2500,7 +2510,7 @@ body {
   border: none;
   padding: 16px 20px;
 
-  font-family: 'OpenSans';
+  font-family: 'Open Sans';
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
